@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Progetto settimanale 6</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg  navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="index.html">Atelier</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,13 +24,16 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link myLink btn  text-start" href="#">Studio</a>
+                            <a class="nav-link myLink btn  text-start" href="#studio">Studio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link myLink btn  text-start" href="#">Servizi</a>
+                            <a class="nav-link myLink btn  text-start" href="#servizi">Servizi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link myLink btn  text-start" href="#">Contatti</a>
+                            <a class="nav-link myLink btn  text-start" href="#progetti">Progetti</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link myLink btn  text-start" href="#contatti">Contatti</a>
                         </li>
                     </ul>
                 </div>
@@ -37,100 +41,144 @@
         </nav>
     </header>
     <main>
-        <div class="text-center">
+
+        <div id="studio" class="text-center div1 ">
             <h1>Architettura per spazi che parlano</h1>
             <p>Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali e al contesto.</p>
-            <a href="#">Inizia un progetto</a>
+            <button class="btn">Inizia un Progetto</button>
         </div>
-        
 
-         <div class="container my-5 text-center ">
+
+
+        <div id="servizi" class="container my-5 text-center ">
             <h3 class="fw-bold">I nostri servizi</h3>
-            <p>Tre aree di lavoro, una solo attenzione alla qualità.</p>
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="assets\img\icons8-home-48.png" alt="house" class="d-block mx-auto mt-4">
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">Progettazione residenziale</h5>
-                                <p class="card-text">Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-12 col-md-4 mb-3">
-                        <div class="card h-100 shadow-sm">
-                           <img src="assets\img\icons8-interior-48.png" alt="house design" class="d-block mx-auto mt-4">
-                           <div class="card-body text-center">
-                                <h5 class="card-title fw-bold"> Interior design</h5>
-                                <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-12 col-md-4 mb-3">
-                        <div class="card h-100 shadow-sm" >
-                           <img src="assets\img\icons8-brick-wall-48.png" alt="ristrutturazione" class="d-block mx-auto mt-4" >
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">Ristrutturazioni</h5>
-                                <p class="card-text">Riqualificazione di spazi esistenti, gestione dei lavori e coordinamento con le imprese. </p>
-                               
-                            </div>
+            <p>Tre aree di lavoro, una sola attenzione alla qualità.</p>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets\img\icons8-home-48.png" alt="house" class="d-block mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Progettazione residenziale</h5>
+                            <p class="card-text">Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla
+                                consegna delle chiavi.</p>
+
                         </div>
                     </div>
                 </div>
-         </div>
-          <div class="justify-content-center text-center">
-             <h3>Contattaci</h3>
-            <p>Risponderemo entro 24 ore.</p>
-         </div>
-         <div class="container d-flex">
-           
-            <div class="row justify-content-center col-12 col-md-8 col-lg-6  mx-auto">
-            <form class="form-select">
-                <label for="name">Nome</label>
-                <input class="col-12 my-2" type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input class="col-12 my-2" type="email" id="email" name="email">
-                <label for="progetto">Tipo di progetto</label>
-                <select class="col-12 my-2" name="progetti" id="prog">
-                    <option value="res" selected>Residenziale</option>
-                    <option value="ind">Industriale</option>
-                    <option value="rs">Ristrutturazione</option>
-                    <option value="int">Interior Design</option>
-                </select>
-                <label for="message">Messaggio</label>
-                <textarea class="col-12 my-2" name="message" id="message" placeholder="Inserisci qui la tua richiesta in dettaglio"></textarea>
-                <input class="col-12 my-2 rounded-2" type="submit" name="submit" id="submit" value="Invia">
-            </form>
-         </div>
-         </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets\img\icons8-interior-48.png" alt="house design" class="d-block mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold"> Interior design</h5>
+                            <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e
+                                arredo su misura.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets\img\icons8-brick-wall-48.png" alt="ristrutturazione"
+                            class="d-block mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Ristrutturazioni</h5>
+                            <p class="card-text">Riqualificazione di spazi esistenti, gestione dei lavori e
+                                coordinamento con le imprese. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="progetti" class="text-center fw-bold">
+            <h3 class="fw-bold">I nostri progetti</h3>
+        </div>
+        <div class="container my-3">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/img/pexels-bertellifotografia-13872660.jpg" alt="house1">
+                    <p class="mt-2 fw-bold">Progettazione di uno spazio cozy per la famiglia Lucano</p>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/img/pexels-wolfgang-weiser-467045605-35681767.jpg" alt="house2">
+                    <p class="mt-2 fw-bold">Villa Amadori</p>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/img/pexels-robertkso-33954649.jpg" alt="house3">
+                    <p class="mt-2 fw-bold">Progetto di ristrutturazione vecchia tenuta di campagna</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Successivo</span>
+            </button>
+        </div>
+        </div>
+
+
+        <div class="divForm container-fluid w-100 py-5">
+            <div class="justify-content-center text-center">
+                <h3 class="fw-bold">Contattaci</h3>
+                <p>Risponderemo entro 24 ore.</p>
+            </div>
+            <div class="container-fluid py-5 d-flex ">
+
+                <div class="row justify-content-center col-12 col-md-8 col-lg-6 mx-auto w-md-75">
+                    <form class="form-select">
+                        <label for="name">Nome</label>
+                        <input class="col-12 my-3" type="text" id="name" name="name">
+                        <label for="email">Email</label>
+                        <input class="col-12 my-3" type="email" id="email" name="email">
+                        <label for="progetto">Tipo di progetto</label>
+                        <select class="col-12 my-3" name="progetti" id="prog">
+                            <option value="res" selected>Residenziale</option>
+                            <option value="ind">Industriale</option>
+                            <option value="rs">Ristrutturazione</option>
+                            <option value="int">Interior Design</option>
+                        </select>
+                        <label for="message">Messaggio</label>
+                        <textarea class="col-12 my-3" name="message" id="message"
+                            placeholder="Inserisci qui la tua richiesta in dettaglio"></textarea>
+                        <input class=" button col-12 my-3 rounded-2" type="submit" name="submit" id="submit"
+                            value="Invia">
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-    <br>
-    <footer class="container">
+
+    <footer id="contatti" class="container-fluid">
+        <br><br>
         <div class="row">
-        <div class="col-12 col-md-4" >
-        <h5>Atelier</h5>
-        <p>Stdio di Architettura</p>
-        <p>Via del Pioppo 12,Milano</p>
-        </div>
-        <div class="col-12 col-md-4">
-            <h5>Link</h5>
-            <a href="#">Studio</a>
-            <a href="#">Servizi</a>
-            <a href="#">Contatti</a>
-        </div>
-        <div class="col-12 col-md-4">
-            <h5>Contatti</h5>
-            <p>info@atelier.example</p>
-            <p>+39 02 0000 1111</p>
-        </div>
+            <div class="col-12 col-md-4">
+                <h5>Atelier</h5>
+                <p>Stdio di Architettura</p>
+                <p>Via del Pioppo 12,Milano</p>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <h5>Link</h5>
+                <a href="#" class="text-decoration-none d-block">Studio</a>
+                <a href="#" class="text-decoration-none d-block">Servizi</a>
+                <a href="#" class="text-decoration-none d-block">Contatti</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Contatti</h5>
+                <p>info@atelier.example</p>
+                <p>+39 02 0000 1111</p>
+            </div>
         </div>
         <hr>
         <p class="text-center">&copy 2026 Atelier- tutti i diritti riservati.</p>
-
+        <br><br>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
